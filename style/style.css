@@ -1,0 +1,579 @@
+/*****ESTILOS GLOBALES*****/
+
+/*variables css*/
+:root{
+    --had-color: #081c15;
+    --had-color-an:#7ae582;
+    --bot-color:#bfc0c0;
+    --bot-wap-colo:#2d6a4f;
+    --main-baner-color: #080708;
+    --main-model-color:#1b4332;
+    --fot-color:#84a98c;
+    --bot2-color:#d90429;
+    --foter-color:#343a40;
+}
+
+/**body**/
+body{
+    font-family:sans-serif;
+    background-color:var(--foter-color);
+     display: grid;
+     grid-template-areas: 
+     "nav header  header  header "
+     "nav main    main    main"
+     "nav modelos modelos modelos"
+     "nav footer  footer  footer";
+     grid-template-columns: 170px 1fr 1fr 16%;
+   
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****LAYOUT****/
+/*header*/
+header{
+    background-image: url(../img/fondo.t2.avif);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;                   /*para poder aplicar flex sobre el header*/ 
+    align-items: center;             /*para centrar*/
+    justify-content: flex-start;   /*crea un espacio entre el logo y las opciones*/
+    flex-direction:column;
+    height: 120px;                    /*usamos esto para definir la altura del header(encabezado)..esto es parte de box model*/
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    grid-area: header;
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--had-color-an);
+    font-family: "Kanit", sans-serif;
+   
+}
+
+header img {
+    width: 120px;  /*le dimos un tamanio a la imaguen del logo del encabezado anclado*/
+}
+#encabezado {
+    background-image: url(../img/fondo.t2.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+/**** nav ****/
+.nav {
+    grid-area: nav;
+    display: flex;
+    margin-top: 150px;      /*serparamos del marguen superior*/
+    justify-content:center;
+    flex-wrap: wrap;   /*cuando la pantalla se vaya achicando esto ara
+                     que las se acomoden y formen una fila una arriba de otra*/
+    
+    
+}
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;   /*** con esto separamos los botones de la lista de nav*/
+}
+
+/****main****/
+main {
+    grid-area: main;
+  
+   background-color: white;
+   background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: 40px;      /*serparamos el main del marguen superior*/
+    flex-wrap: wrap;
+   
+}
+                            /*modelos*/
+#modelos {
+     grid-area: modelos;
+     padding-top: 60px;   /*creamos un espacio entre la etiqueta modelos y el baner*/
+      background-color: white;
+}
+                            
+ #modelos h3 {
+   font-family: "Work Sans", sans-serif;
+ }
+  #modelos h3,h2 {
+  text-align: center;
+                            
+    }
+#modelos h2 {
+  color: grey;
+}
+                            
+#modelconteiner {
+    display: flex;
+    align-items: flex-start;
+    /*centramos las etiquetas(div.articule..etc)*/
+    flex-direction: row;
+     /*ponemos a las etiquetas en forma de columna osea una etiqueta arriba de otra*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+                            
+ #modelos .model {
+  /* padding: 20px;  /*generamos un espacio entre de 20px en cada etiqueta*/
+  background-color: darkgray;
+  margin: 20px 0;
+  flex-wrap: wrap; 
+ }
+ .model img {
+ width: 200px;
+ /*le dimos un tamanio a la imagen de los modelos de gorras*/
+}
+/*foter*/
+
+footer {
+    grid-area: footer;
+    background-color:var(--foter-color);
+    color: white;
+    height: 200px;  /*definimos una alura para el pie de paguina osea el foter*/
+    margin-top: 40px;
+}
+footer h3{
+     font-family:system-ui;
+}
+footer  h4{
+  
+  
+    font-size:large ; /*para dar el tamanio de la letra*/
+    font-style: italic ; /*para darle estilo a la letra */
+    font-weight:200; /*para darle grosor a la letra*/
+    /*color: ;  /*para darle color*/
+}
+.foterconteiner {
+    font-family:system-ui;   /*para selecionar el tipo de letra*/
+    display: flex;  /*para aplicar box*/
+    justify-content:space-around;
+    align-items: flex-start;
+   
+    flex-wrap: wrap;   /*cuando la pantalla se vaya achicando esto ara
+    que las se acomoden y formen una fila una arriba de otra*/
+    
+    padding: 10px ;
+}
+
+footer .wapp img {
+    width: 60px;       /*le damos un tamanio al logo de watsapp*/
+    position: fixed;   /*hacemos que el logo de watsapp este anclado */
+    bottom: 20px;      /*con esto posisionamos donde va a estar anclado el logo de watsapp*/
+    right: 20px;        /*con esto posisionamos donde va a estar anclado el logo de watsapp*/
+}
+footer .correo img {
+    width: 50px;
+}
+
+
+
+                    /*******CPMPONENTES******/
+/*boton*/
+.boton {
+    font-family:"Kanit", sans-serif;
+    background-color:var(--foter-color);
+    color: white;
+    border-radius: 4px;
+    padding: 3px 8px;               /*con esto editamos el tamanio dl boton*/
+    border: 2px solid white;
+   
+}
+.boton2 {
+    background-color:var(--bot2-color);
+    color:white;
+    border-radius: 4px;
+    padding: 2px;
+}
+.boton3{
+    background-color:var(--had-color-an);
+    color: black;
+    border-radius: 4px; /* para editar lo bordes del boton*/
+    padding: 8px;
+}
+
+
+
+                     /******   PAGUINAS   *****/
+
+
+/*baner*/
+#baner {
+    
+    background-color: var(--main-baner-color);
+    color:white;
+    text-align: center;   /*centramos las etiquetas ..como los div,p,h2 etc..*/
+    height: 100vh;        /*creo que le da un tamanio al baner*/
+   
+    display: flex;        /*vamos a mober el parrafo a la derecha y la imaguen a la izquierda*/
+    align-items: center;  /*centramos la imagen y el parrafo*/
+    padding: 10px 25px;
+    height: auto;          /*va a ocupar el 100% de su espacio*/
+    justify-content: space-around;    /*centramos los div y le damos un espacio a cada div..si esque los div estan asi 40% y 30% osea no ocupan todo el espacio*/
+    flex-wrap: wrap;     /*cuando se achique la pantalla esto ara qe las etiquetas se acomoden una abajo de la otra*/
+    padding-top: 100px;
+}
+
+
+.banerParraf {
+     width: 60%;   /*le decimos que este div va a coupar el 50% de su estapcio*/
+     max-width: 500px;     /*el parrafo/texto solo se podra estirar 500px*/
+
+}
+.banerParraf p {
+    margin-bottom: 20px;  /*creamos un espacio arriba y abajo del parrafo(p) */
+    
+   
+}
+.banerImg{
+    width: 40%;
+
+}
+#baner p {
+    font-style: italic;
+    padding-bottom: 20px;
+}
+#baner img{
+    width: 400px;      /*le damos el tamanio a la imaguen del baner*/
+    padding-top: 20px;
+}
+
+
+
+                       
+                      
+                             /***CONTACTO**/
+/*main*/
+#ubi{
+    padding-top: 80px;    /*crea un espacio arriva del main para que no este muy junto con el header*/
+    
+
+}
+#loc li img{
+    width: 400px; 
+}
+#ubi div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#loc{
+    padding-top: 30px;    /*crea un espacio arriva del main para que no este muy junto con el header*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#loc div ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:baseline;
+  
+}
+#red li {
+    display: flex;
+    text-align: center;
+     flex-direction: column;
+     align-items: center;
+
+}
+a {
+    text-decoration: none;
+}
+ li {
+    list-style: none;
+}
+
+#red h2{
+    color: #080708;
+}
+
+
+#ubi h2{
+    color:black ;
+}
+#ubi h3{
+    color: #080708;
+}
+
+#loc h2{
+color: black;
+}
+
+
+
+
+                    /******    mi cuenta   *****/
+
+
+
+.maincuenta p{
+
+    color: #080708;
+    max-width: 800px;     /*el parrafo/texto solo se podra estirar 500px*/
+    font-size: large;
+}
+.maincuenta {
+    display: flex; 
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;    /*crea un espacio arriva del main para que no este muy junto con el header*/
+    
+}
+.maincuenta #iniciar_cesion{
+    padding-top: 60px;
+}
+.maincuenta label{
+    color:white;
+}
+.maincuenta h2{
+    
+    color: black;
+}
+.maincuenta #bot{
+    gap: 15px;
+}
+.maincuenta .sinborde1{
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 20px; /* Ajusta la altura según tus necesidades */
+    border: none; /* Elimina los bordes predeterminados */
+ 
+    background-color:transparent;
+    border-bottom: 2px solid white; /* Agrega un borde inferior */
+    padding: 10px;
+    margin-bottom: 16px; /*para que los cuadritos no esten tan juntos*/
+
+}
+.maincuenta ::placeholder{
+    color:#343a40;
+}
+.maincuenta .sinborde2{
+    border: none; /* Elimina los bordes predeterminados */
+    background-color: transparent; /* Hace el fondo transparente */
+    border-bottom: 2px solid white; /* Agrega un borde inferior */
+    padding: 4px ; /* Espacio interno en el input */
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 20px; /* Ajusta la altura según tus necesidades */
+    appearance: none;
+    margin-bottom: 5px; /*para que los cuadritos no esten tan juntos*/
+   
+    
+}
+.maincuenta #genero{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;    /* crea un espacio entre los div*/
+    padding: 10px 20px;
+}
+
+
+/*
+input[type="email"]{
+   
+}
+
+input[type="email"]{
+    background-color:dimgray;
+}
+input[type="number"]{
+    background-color:dimgray;
+}*/
+main form{
+    display: flex;                   /*para poder aplicar flex sobre el header*/
+    flex-direction: column;
+    align-items: center;
+    margin: 20px ;
+    padding: 10px 70px ;
+    background-color: gray;
+
+}
+
+main form div {
+    display: flex;  
+    align-items:center ;
+    flex-direction: column;
+}
+
+main section form #bot {
+    display: flex;  
+    align-items:center ;
+    flex-direction:row;
+    margin: 10px 0;
+
+}
+
+
+                                /****Productos****/
+
+#pro{
+    padding-top: 30px;  
+}
+#progorras h2{
+    color: black;
+}
+#progorras h3{
+    font-size: large;
+    font-style: italic;
+    font-weight: 200;
+    color: #080708;
+}
+#progorras{
+    padding-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: 50px 0;
+}
+
+#progorras section{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#progorras section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+    background-color:transparent;
+    border: 1px solid black;
+}
+#progorras section div img{
+    width: 236px ;
+}
+
+
+
+/*** outlet ***/
+#mainout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+   
+}
+
+#mainout section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px ;  /*crea un espacio alrededor de los elementos , en este caso crea un espacio alrededor de la section*/
+}
+
+#mainout section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin: 10px 0;*/
+    padding: 20px;
+    background-color:transparent;
+    border: 1px solid black;   /*creamos un borde solido alrededor del padding*/
+}
+
+#mainout img{
+    width: 236px;
+}
+#mainout h2{
+    color: #080708;
+   
+}
+
+#mainout h3{
+    color: #080708;
+    font-size: large;
+    font-style: italic;
+    font-weight: 200;
+}
+
+
+                    /******** GRID *******/
+@media screen and (max-width: 768px){
+    #baner {
+     
+        flex-direction: column;
+        flex-wrap:nowrap;
+        height: auto;
+        padding: 90px;
+    }
+    #baner img{
+        padding: 20px;
+    }
+    .foterconteiner{
+        flex-direction: column;
+        padding-left: 180px;
+    }
+    .foterconteiner div{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 425px){
+  
+  body{
+    grid-template-areas:
+     
+     "header  header  header  header "
+     "nav     nav     nav     nav" 
+     "main    main    main    main"
+     "modelos modelos modelos modelos"
+     "footer  footer  footer  footer";
+  }
+ .nav ul{
+    display: flex;
+    flex-direction: row;
+    }
+    #baner{
+        padding: 5px 0px;
+    
+    }
+    #baner p{
+        width: 100%;
+        padding: 10px 5px;
+    }
+  .foterconteiner{
+    padding-left: 20px;
+  }
+  .model img{
+    width: 100%;
+  }
+  #modelconteiner{
+    display: flex ;
+    align-items:center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  #mainout section{
+    flex-direction: column;
+  }
+ 
+
+}
+
