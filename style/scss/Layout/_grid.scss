@@ -1,0 +1,78 @@
+@import"../base/VARS";
+body{
+    background-color:$NAVcolor;
+    display: grid;
+    grid-template-areas: 
+    "header   header  header   header "
+    "nav      nav     nav      nav"
+    "main     main    main     main"
+    "modelos  modelos modelos  modelos"
+    "footer   footer  footer   footer";
+    grid-template-columns: 170px 1fr 1fr 16%;
+  
+}
+
+
+/******** GRID *******/
+@media screen and (max-width: 768px){
+#baner {
+                     
+    flex-direction: column;
+    flex-wrap:nowrap;
+    height: auto;
+    padding: 90px;
+}
+#baner img{
+  padding: 20px;
+  }
+.foterconteiner{
+  flex-direction: column;
+  padding-left: 180px;
+}
+.foterconteiner div{
+  padding: 10px;
+  }
+
+}
+@media screen and (max-width: 425px){
+                  
+body{
+   grid-template-areas:
+                     
+   "header  header  header  header "
+   "nav     nav     nav     nav" 
+   "main    main    main    main"
+   "modelos modelos modelos modelos"
+   "footer  footer  footer  footer";
+}
+.nav ul{
+  display: flex;
+  flex-direction: row;
+}
+#baner{
+  padding: 5px 0px;
+}
+#baner p{
+  width: 100%;
+  padding: 10px 5px;
+}
+.foterconteiner{
+  padding-left: 20px;
+}
+.model img{
+  width: 100%;
+}
+#modelconteiner{
+  display: flex ;
+  align-items:center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+                  
+#mainout section{
+  flex-direction: column;
+}
+                 
+}
+                
+                

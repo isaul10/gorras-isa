@@ -1,0 +1,30 @@
+@import"../base/VARS";
+header{
+   // background-image: url(/img/fondo.t2.avif);
+  background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;                   /*para poder aplicar flex sobre el header*/ 
+    align-items: center;             /*para centrar*/
+    justify-content: flex-start;   /*crea un espacio entre el logo y las opciones*/
+    flex-direction:column;
+    height: 110px;                    /*usamos esto para definir la altura del header(encabezado)..esto es parte de box model*/
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    grid-area: header;
+
+    a {
+        text-decoration: none;
+        color: $had-color-an;
+        font-family: "Kanit", sans-serif;
+       
+    }
+    img {
+        width: 110px;  
+    }
+
+}
+
+

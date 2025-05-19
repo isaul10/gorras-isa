@@ -1,0 +1,874 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex; /*para poder aplicar flex sobre el header*/
+  align-items: center; /*para centrar*/
+  justify-content: flex-start; /*crea un espacio entre el logo y las opciones*/
+  flex-direction: column;
+  height: 110px; /*usamos esto para definir la altura del header(encabezado)..esto es parte de box model*/
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  grid-area: header;
+}
+header a {
+  text-decoration: none;
+  color: #081c15;
+  font-family: "Kanit", sans-serif;
+}
+header img {
+  width: 110px;
+}
+
+main {
+  grid-area: main;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-top: 0px;
+  flex-wrap: wrap;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #212529;
+  color: white;
+  height: 200px;
+  margin-top: 40px;
+}
+footer #foterconteiner {
+  font-family: system-ui; /*para selecionar el tipo de letra*/
+  display: flex; /*para aplicar box*/
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+footer #foterconteiner h3 {
+  font-family: monospace;
+  font-size: large;
+}
+footer #foterconteiner h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+footer #foterconteiner .wapp img {
+  width: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+footer #foterconteiner #correo ul {
+  padding: 5px;
+}
+footer #foterconteiner #correo ul li {
+  padding: 5px;
+}
+footer #foterconteiner #correo img {
+  width: 50px;
+}
+footer #foterconteiner .foterlogo img {
+  width: 50px;
+}
+footer #foterconteiner #redes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+footer #foterconteiner #redes ul {
+  padding-top: 5px;
+}
+footer #foterconteiner #redes ul .foterredes {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer #foterconteiner #redes ul .foterredes .fa-brands {
+  background: transparent;
+  font-size: 30px;
+  color: white;
+}
+footer #foterconteiner .fa-solid {
+  font-size: 30px;
+  color: white;
+  padding-left: 15px;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  margin-top: 110px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 7px;
+}
+.nav div .usuario img {
+  width: 40px;
+  margin-right: 10px;
+}
+.nav div .carrito img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.boton a {
+  display: inline-block;
+  padding: 9px 23px;
+  background: rgb(17, 17, 17);
+  color: rgb(241, 58, 58);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 3rem;
+  transition: a11 0.5s ease;
+}
+.boton a:hover {
+  background: rgb(224, 14, 14);
+  color: rgb(243, 231, 230);
+  box-shadow: red 0px 1px 25px;
+}
+
+.boton1 {
+  display: inline-block;
+  padding: 9px 23px;
+  background: rgb(17, 17, 17);
+  color: rgb(241, 58, 58);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 3rem;
+  transition: a11 0.5s ease;
+}
+.boton1:hover {
+  background: rgb(224, 14, 14);
+  color: rgb(243, 231, 230);
+  box-shadow: red 0px 1px 25px;
+}
+
+.boton4 {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 9px 23px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 3rem;
+  transition: a11 0.5s ease;
+}
+.boton4:hover {
+  background: rgb(224, 14, 14);
+  color: rgb(243, 231, 230);
+  box-shadow: red 0px 1px 25px;
+}
+
+/*.boton4 {
+    font-family:"Kanit", sans-serif;
+    background-color:transparent;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 8px;              
+    border: 2px solid transparent;
+
+}*/
+.boton2 {
+  background-color: #d90429;
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.boton3 {
+  background-color: #081c15;
+  color: black;
+  border-radius: 4px; /* para editar lo bordes del boton*/
+  padding: 8px;
+}
+
+#baner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+}
+#baner #banerParraf {
+  width: 50%;
+  max-width: 500px;
+}
+#baner #banerParraf p {
+  font-style: italic;
+  padding-bottom: 20px;
+  font-family: "Work Sans";
+}
+#baner #logoini {
+  width: 50%;
+  padding-top: 20px;
+}
+#baner img {
+  width: 100%;
+}
+
+#encabezado {
+  background-image: url(../img/fondo.t2.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+/*modelos*/
+#modelos {
+  grid-area: modelos;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+#modelos h3 {
+  font-family: "Work Sans", sans-serif;
+}
+#modelos h3, #modelos h2 {
+  text-align: center;
+  color: white;
+}
+#modelos h2 {
+  color: white;
+}
+#modelos p {
+  color: white;
+  font-style: italic;
+}
+#modelos #modelconteiner {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+#modelos #modelconteiner .etiqueta {
+  width: 320px;
+  padding: 20px;
+  box-shadow: 2px 2px 15px rgb(243, 7, 7);
+  border-radius: 10px;
+  border: solid rgba(34, 31, 31, 0) 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#modelos #modelconteiner .etiqueta:hover {
+  border: solid rgb(231, 24, 24) 2px;
+}
+#modelos #modelconteiner .etiqueta img {
+  width: 236px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(250, 7, 7);
+}
+#modelos #modelconteiner .etiqueta .model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+#modelos #modelconteiner .etiqueta .descrip {
+  padding: 20px 5px;
+}
+#modelos #modelconteiner .etiqueta .boton {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#maincontacto {
+  background-color: black;
+}
+#maincontacto #ubi {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  box-shadow: 2px 2px 15px rgb(243, 7, 7);
+  border-radius: 10px;
+  margin: 70px;
+}
+#maincontacto #ubi #direccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+#maincontacto #ubi #maps {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+#maincontacto #ubi h2 {
+  color: white;
+}
+#maincontacto #ubi h3 {
+  color: white;
+}
+#maincontacto #loc {
+  padding-top: 30px; /*crea un espacio arriva del main para que no este muy junto con el header*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#maincontacto #loc li img {
+  width: 400px;
+}
+#maincontacto #loc div ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+#maincontacto #loc h2 {
+  color: black;
+}
+#maincontacto #red {
+  /*display: grid;
+   grid-template-columns: repeat(2,50%);
+   padding: 20px;
+   gap: 10px;
+   width: 100%;*/
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  background: linear-gradient(rgba(12, 11, 11, 0.8), rgba(139, 6, 6, 0.8));
+}
+#maincontacto #red .box-redes {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#maincontacto #red .box-redes h1 {
+  text-align: left;
+  letter-spacing: 5px;
+}
+#maincontacto #red .box-redes .data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#maincontacto #red .box-redes .data p {
+  font-size: 16px;
+}
+#maincontacto #red .box-redes .data p i {
+  color: rgb(204, 13, 13);
+  margin-right: 10px;
+  font-size: 25px;
+}
+#maincontacto #red .box-redes .links {
+  display: flex;
+  gap: 15px;
+}
+#maincontacto #red .box-redes .links a {
+  width: 40px;
+  height: 40px;
+  background: rgb(190, 7, 7);
+  text-align: center;
+  transition: 1s;
+}
+#maincontacto #red .box-redes .links a i {
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+}
+#maincontacto #red form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+#maincontacto #red form .imput-form input {
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  outline: none;
+  background: rgb(172, 7, 7);
+  transition: 0.3s;
+  color: white;
+}
+#maincontacto #red form .imput-form textarea {
+  width: 100%;
+  height: 130px;
+  background: rgb(141, 10, 10);
+  border: 3px solid transparent;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  color: white;
+  padding: 10px;
+}
+
+.maincuenta {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px; /*crea un espacio arriva del main para que no este muy junto con el header*/
+  background: black;
+}
+.maincuenta p {
+  color: white;
+  max-width: 700px;
+  font-size: large;
+  font-weight: 500;
+  padding: 40px 0;
+}
+.maincuenta h1 {
+  color: #c92b2b;
+}
+.maincuenta img {
+  width: 300px;
+}
+.maincuenta a {
+  color: white;
+}
+.maincuenta #iniciar_cesion {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.maincuenta #botonini {
+  padding: 30px;
+}
+.maincuenta label {
+  color: white;
+}
+.maincuenta h2 {
+  color: white;
+  font-weight: 500;
+}
+.maincuenta #bot {
+  gap: 15px;
+}
+.maincuenta .sinborde1 {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 20px; /* Ajusta la altura según tus necesidades */
+  border: none; /* Elimina los bordes predeterminados */
+  background-color: transparent;
+  border-bottom: 2px solid rgb(221, 214, 214); /* Agrega un borde inferior */
+  padding: 10px;
+  margin-bottom: 16px; /*para que los cuadritos no esten tan juntos*/
+  color: white;
+}
+.maincuentaplaceholder {
+  color: #343a40;
+}
+.maincuenta .sinborde2 {
+  border: none; /* Elimina los bordes predeterminados */
+  background-color: transparent; /* Hace el fondo transparente */
+  border-bottom: 2px solid rgb(219, 213, 213); /* Agrega un borde inferior */
+  padding: 4px; /* Espacio interno en el input */
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 20px; /* Ajusta la altura según tus necesidades */
+  appearance: none;
+  margin-bottom: 5px; /*para que los cuadritos no esten tan juntos*/
+  color: white;
+}
+.maincuenta #genero {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /* crea un espacio entre los div*/
+  padding: 10px 20px;
+}
+.maincuenta form {
+  display: flex; /*para poder aplicar flex sobre el header*/
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+  padding: 15px;
+  background-color: #212529;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgb(182, 175, 175);
+  border: solid rgba(34, 31, 31, 0) 2px;
+}
+.maincuenta form:hover {
+  border: solid rgb(223, 215, 215) 2px;
+}
+.maincuenta form div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.maincuenta form #bot {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+#pro {
+  padding-top: 30px;
+}
+
+#productos {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+#productos #gorras_curva_A {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+#productos #gorras_curva_A .etiqueta2 {
+  width: 220px;
+  height: 360px;
+  padding: 10px;
+  box-shadow: 2px 2px 15px rgb(243, 7, 7);
+  border-radius: 10px;
+  border: solid rgba(34, 31, 31, 0) 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#productos #gorras_curva_A .etiqueta2:hover {
+  border: solid rgb(231, 24, 24) 2px;
+}
+#productos #gorras_curva_A .etiqueta2 img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(250, 7, 7);
+  cursor: pointer;
+}
+#productos #gorras_curva_A .etiqueta2 .model1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+#productos #gorras_curva_A .etiqueta2 .model1 h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+#productos #gorras_curva_A .etiqueta2 .model1 p {
+  color: gray;
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+#productos #gorras_curva_A .etiqueta2 .descrip1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+#productos #gorras_curva_A .etiqueta2 .descrip1 .precio h6 {
+  font-size: 17px;
+  color: red;
+  font-weight: 600;
+}
+#productos #gorras_curva_A .shop-icono {
+  margin-right: 150px;
+  margin-top: 5px;
+}
+#productos #gorras_curva_A .shop-icono .fa-regular {
+  color: red;
+}
+
+/* .shop-text{
+  text-align: center;
+
+  h4{
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: rgb(231, 24, 24);
+  }
+  h2{
+      font-size:var(--h2-font) ;
+      color: white;
+  }
+ }
+ .producto_gorra{
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+          box-shadow: 2px 2px 15px rgb(243, 7, 7);
+          border-radius: 10px;
+          border: solid rgba(34, 31, 31, 0) 2px;
+        //  display: flex;
+          //flex-direction: column;
+         align-items: center;
+          gap: 2rem ;
+          margin-top: 4rem ;
+           &:hover{
+              border: solid rgb(231, 24, 24) 2px;
+          }
+
+
+          }
+          .model{
+            position: relative;
+            padding: 10px 35px 40px;
+             background: rgb(37, 37, 37);
+             border-radius: 3rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 20px;
+              padding: 15px;
+
+               img{
+              width: 100%;
+              height: auto;
+              transition: transform 0.5s ease;
+              cursor: pointer;
+              border-radius: 50%;
+              box-shadow: 2px 2px 10px rgb(250, 7, 7);
+              h3{
+                  font-size: 18px;
+                  margin-bottom: 5px;
+                  font-weight: 700;
+              }
+              p{
+                  color: white;
+                  line-height: 30px;
+                  margin-bottom:1rem;
+              }
+              .shop-icono{
+                      position: relative;
+                      top: 30px;
+                      left: 35px;
+                      a{
+                      .fa-regular{
+                         font-size: 22px;
+                         color: yellow;
+                      }
+                  }
+              }
+          }
+            .descrip{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 20px 5px;
+              .precio{
+                  h6{
+                      font-size: 17px;
+                      color: white;
+                  }
+              }
+              .shop-boton{
+                  display: inline-block;
+                  padding: 9px 23px;
+                  background: yellow;
+                  color: blue;
+                  font-size: 14px;
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  border-radius: 3rem;
+                  transition: a11 0.5s ease;
+                  &:hover{
+                      background: blueviolet;
+                      color: blue;
+                      box-shadow: red 0px 1px 25px;
+                  }
+
+
+              }
+          }
+          .boton{
+              text-align: center;
+              margin-top: 10px;
+
+            .enlase{
+
+               padding: 4px 10px;
+               color: white;
+             }
+          }
+
+
+
+ }
+
+
+ h2{
+  color: black;
+  }
+  h3{
+      font-size: large;
+      font-style: italic;
+      font-weight: 200;
+      color: #080708;
+  }
+  section{
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      margin: 50px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 10px 0;
+          padding: 20px;
+          background-color:transparent;
+          border: 1px solid black;
+          img{
+              width: 236px ;
+          }
+      }
+  }*/
+#mainout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+#mainout section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px; /*crea un espacio alrededor de los elementos , en este caso crea un espacio alrededor de la section*/
+}
+#mainout section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin: 10px 0;*/
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid black; /*creamos un borde solido alrededor del padding*/
+}
+#mainout img {
+  width: 236px;
+}
+#mainout h2 {
+  color: #080708;
+}
+#mainout h3 {
+  color: #080708;
+  font-size: large;
+  font-style: italic;
+  font-weight: 200;
+}
+
+/**grid*/
+body {
+  background-color: #212529;
+  display: grid;
+  grid-template-areas: "header   header  header   header " "nav      nav     nav      nav" "main     main    main     main" "modelos  modelos modelos  modelos" "footer   footer  footer   footer";
+  grid-template-columns: 170px 1fr 1fr 16%;
+}
+
+/******** GRID *******/
+@media screen and (max-width: 768px) {
+  #baner {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    padding: 90px;
+  }
+  #baner img {
+    padding: 20px;
+  }
+  .foterconteiner {
+    flex-direction: column;
+    padding-left: 180px;
+  }
+  .foterconteiner div {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  body {
+    grid-template-areas: "header  header  header  header " "nav     nav     nav     nav" "main    main    main    main" "modelos modelos modelos modelos" "footer  footer  footer  footer";
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #baner {
+    padding: 5px 0px;
+  }
+  #baner p {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .foterconteiner {
+    padding-left: 20px;
+  }
+  .model img {
+    width: 100%;
+  }
+  #modelconteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #mainout section {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

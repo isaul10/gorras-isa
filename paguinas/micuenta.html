@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <header id="encabe2">
         <div>
-            <img src="../img/logo.t1.jpg" alt="logo de usuario">
+                <a class="inicio" href="../index.html">
+            <img src="../img/log.Aisa.png" alt="logo de usuario"></a>
         </div>
     
     
@@ -20,11 +22,11 @@
     
     <nav class="nav">
         <ul>
-            <li> <a class="boton" href="../index.html">volver al inicio</a></li>
+            <li> <a class="boton4" href="../index.html">Inicio</a></li>
             
-            <li> <a class="boton" href="#iniciar_cesion">Iniciar cesion</a></li>
+            <li> <a class="boton4" href="#iniciar_cesion">Iniciar cesion</a></li>
             
-            <li><a class="boton" href="#crear_cuenta">Crear cuenta</a></li>
+            <li><a class="boton4" href="#crear_cuenta">Crear cuenta</a></li>
 
         </ul>
     </nav>
@@ -32,18 +34,23 @@
 
     <main class="maincuenta">
         
-        <section id="iniciar_cesion">
-            <h2>Mi Cuenta</h2>
-            <form action="">
+       
+              <h1>SUMATE A LA COMUNIDAD</h1>
+            <h1>TUS BENEFICIOS DE ADICLUB TE ESPERAN</h1>
+            <img src="../img/logo.ISA.png" alt="logo de gorras isa">
+          
+            <p>Obtené un descuento especial por tiempo limitado
+Registrate para recibir las últimas novedades de Nike. Sé el primero en conocer los últimos lanzamientos y ofertas exclusivas.</p>
+          <section id="iniciar_cesion"></section>
+           
+          <form action="">
                 <div>
-                    <h3>Ingrese sus datos:</h3>
+                       <h2>Iniciar cesion</h2>
+                    
                  
                     <input class="sinborde1" id="NOMBRE" type="text" required placeholder="Ingrese su nombre">
                 </div>
-                <div>
-                    <input class="sinborde1" id="APELLIDO" type="text" required  class="sinborde" placeholder="Ingrese su apellido">
-                </div>
-    
+              
                 <div>
                     <input class="sinborde1" id="DNI" type="number" required placeholder="Ingrese su DNI"  >
                 </div>
@@ -55,10 +62,12 @@
            
 
                 <div id="bot">
-                <input class="boton" type="submit" value="ENVIAR">
+                <input class="boton" type="submit" value="INGRESAR">
                 <input class="boton" type="reset" value="LIMPIAR">
                 </div>
-
+                <div> 
+                    <a href="#">Olvidaste tu contrasenia?</a>
+                 </div>
             </form>
             
         </section>
@@ -70,9 +79,10 @@
         </div>
         <section id="crear_cuenta">
            
-            <h2>Nueva Cuenta</h2>
+          
             <form action="">
                 <div>
+                      <h2>Crear cuenta</h2>
                     <h3>Ingrese sus datos:</h3>
                     <label for="NOMBRE">Nombre:</label>
                     <input id="NOMBRE" type="text" required  class="sinborde2">
@@ -86,16 +96,8 @@
                     <input id="DNI" type="number" placeholder="43554132" required   class="sinborde2">
                 </div>
     
+
                 <div>
-                    <label for="Ciudad">Ciudad</label>
-                    <input id="Ciudad" type="text" required class="sinborde2">
-                    <label for="CP">CP</label>
-                    <input id="CP" type="number" required  class="sinborde2">
-                </div>
-    
-                <div>
-                    <label for="Whatsapp">Whatsapp:</label>
-                    <input id="Whatsapp" type="number" required  class="sinborde2">
     
                     <label for="EMAIL">Email</label>
                     <input id="EMAIL" type="email" placeholder="emanuel.alan@gmail.com" required  class="sinborde2">
@@ -121,57 +123,83 @@
                  </div>
             </form>
         </section>
-        <div>
+        <div id="botonini">
             <a class="boton" href="../index.html">volver al inicio</a>
         </div> 
     </main>
 
-    <footer>
+      <footer>
 
-        <div class="foterconteiner">
-        <div >
-            <h3>MEDIOS DE PAGO:</h3>
-            <ul>
-                <li><h4>tarjeta de credito.</h4></li>
-                <li><h4>tarjeta de debito.</h4></li>
-                <li><h4>transferencia bancaria.</h4></li>
-            </ul>
+        <div id="foterconteiner">
+
+            <div>
+                <h3>MEDIOS DE PAGO</h3>
+                <ul>
+                    <li  class="foterlogo">
+                        <h4>tarjeta de credito.</h4>
+                        <img src="../img/logo.tarjeta.credi.png" alt="logo de tarjeta de credito">
+                    </li>
+                    <li  class="foterlogo">
+                        <h4>tarjeta de debito.</h4>
+                         <img src="../img/logo.tarjeta.debit.png" alt="logo de tarjeta de debito">
+                    </li>
+                    <li>
+                        <h4>transferencia bancaria.</h4>
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="redes">
+                <h3>SIGUENOS</h3>
+                <ul>
+                    <li class="foterredes">
+                          
+                         
+                       <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank"> 
+                            <i class="fa-brands fa-instagram"  alt="logo de instagram"></i></i></a>
+                       
+                    </li>
+                    <li class="foterredes">
+                    
+                        <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                        <i class="fa-brands fa-youtube"alt="logo de youtube"></i></i></a>
+                    </li>
+                    <li class="foterredes">
+                      
+                        <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                               <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i></a></li>
+
+                    <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
+                            <img src="../img/logo.Awatsap.png" alt="logo de Whatsapp">
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div id="correo">
+                <h3>MODO DE ENVIOS</h3>
+                <ul>
+                    <li>
+                        <h4>Correo argentino.</h4>
+                        <img src="../img/logo.correo.arg.png" alt="logo del correo argentino">
+                    </li>
+                    <li>
+                        <h4>Correo OCA.</h4>
+                        <img src="../img/logo.png" alt="logo del correo OCA">
+                    </li>
+                     <li>
+                        <h4>Motomensajeria</h4>
+                        <img src="../img/logo.motomnjs.png" alt="logo del correo OCA">
+                    </li>
+
+                </ul>
+
+            </div>
+          
+
         </div>
-        <div>
-            <h3>NUESTRAS REDES SOCIALES:</h3>
-            <ul>
-                <li><h4>instagram: gorras.isa_10.</h4></li>
-                <li><h4>facebook: gorras_10.</h4></li>
-        
-                <li><a class="boton2" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">canal de
-                        youtube.</a></li>
-                <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
-                        <img src="../img/logo.wapp.jpeg" alt="logo de Whatsapp">
-                    </a>
-                </li>
-        
-            </ul>
-        
-        </div>
-        <div class="correo">
-            <h3>MODO DE ENVIOS:</h3>
-            <ul>
-                <li>
-                <h4>correo argentino.</h4>
-                <img src="../img/Logo_Correo_Argentino.svg.png" alt="logo del correo argentino">
-                </li>
-                <li>
-                <h4>correo OCA.</h4>
-                <img src="../img/Logooca.png" alt="logo del correo OCA">
-                </li>
-            </ul>
-        </div>
-    
-           
-        <div> 
-            <li><a class="boton" href="#iniciar_cesion">volver arriba</a></li>
-        </div>
-    </div>
     </footer>
 
 

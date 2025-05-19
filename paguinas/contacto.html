@@ -4,35 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/css/style.css">
     <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="encabezado">
         <div>
-            <img  src="../img/logo.t1.jpg" alt="logo de usuario">
+               <a class="inicio" href="../index.html">
+            <img src="../img/logo.ISA.png" alt="logo de usuario"></a>
         </div>
     </header>
     <nav class="nav">
         <ul>
 
-            <li> <a class="boton" href="#ubi">Donde encontrarnos</a></li>
-            <br>
-            <li> <a class="boton" href="#loc">Nestro local fisico</a></li>
-            <br>
-            <li> <a class="boton" href="#red">Nuestras redes</a></li>
-            <br>
-            <li> <a class="boton" href="../index.html">volver al INICIO</a></li>
-
+            <li> <a class="boton4" href="#ubi">Ubicacion</a></li>
+            
+            <li> <a class="boton4" href="#loc">Local</a></li>
+            
+            <li> <a class="boton4" href="#red">Redes</a></li>
+            
+         
         </ul>
     </nav>
-    <main>
+    <main id="maincontacto">
+
+
+           <section id="red">
+          <div class="box-redes">
+                <h1>CONTACTATE CON NOSOTROS</h1>
+                <div class="data">
+                    <p> <i class="fa-solid fa-phone"></i>+143 434356</p>
+                    <p> <i class="fa-solid fa-envelope"></i>isa.gorrastienda@gmail.com</p>
+                    <p> <i class="fa-solid fa-location-dot"></i>Avenida rivadavia Ciro torrez lopez n423423 cp4400</p>
+                </div>
+
+                <div class="links">
+                    <a href="#"> <i  class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#">  <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+                    
+                    
+                </div>
+          </div>
+
+          <form>
+            <div class="imput-form">
+                <input type="text" required
+                placeholder="Nombre y Apellido">
+               
+            </div>
+
+             <div class="imput-form">
+                <input type="email" required
+                placeholder="correo electornico">
+            </div>
+
+             <div class="imput-form">
+                <input type="text" required
+                placeholder="Asunto">
+            </div>
+
+            <div class="imput-form">
+              <textarea cols="20" rows="10"
+              placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <div class="boton">
+                <a class="enlase" href="#">Enviar mensaje</a>
+            </div>
+          </form>
+
+        </section>
+
+        
         <section id="ubi">
+            <div id="direccion">
             <h2>Nuestra Ubicacion:</h2>
-    
-            <h3>direccion: Avenida Bolivia 5051, A4400 salta.</h3>
-            <h3>Ubicacion en google maps:</h3>
-            <div>
+                <p>actualmente contamos con una sucursales en el interior del pais, en salta para ser mas espesifico</p>
+           
+          
+           <h3>direccion: Avenida Bolivia 5051</h3>
+            <h3>codigo postal: A4400</h3>
+            <h3>Salta Argentina</h3>
+               
+            </div>
+            <div id="maps">
+              <h3>Te dejamos tambien nuestra Ubicacion en google maps:</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57969.77134859355!2d-65.47434820648954!3d-24.7573930225929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc113ff725893%3A0x2981a8b51a8d1fbd!2sUniversidad%20Nacional%20de%20Salta!5e0!3m2!1ses-419!2sar!4v1742414391443!5m2!1ses-419!2sar"
                      height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -40,6 +98,7 @@
                 </iframe>
             </div>
         </section>
+
         <section id="loc">
             <h2>Nuestro local fisico:</h2>
             <div>
@@ -51,68 +110,83 @@
                 </ul>
             </div>
         </section>
-        <section id="red">
-            <h2>Nuestras Redes:</h2>
-            <div id="nuestras redes">
-                <li>instagram: gorras.isa_10.</li>
-                <li>facebook: gorras_10.</li>
-                
-                <li><a class="boton3" href="https://wa.me/+5493885195868 " target="_blank">Whatsapp</a></li>
-                
-                <li><a class="boton2" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">canal de
-                        youtube.</a></li>
-    
-    
-            </div>
-        </section>
+
+     
       
     </main>
     
-    
-    <footer>
-        <div class="foterconteiner">
-        <div>
-            <h3>MEDIOS DE PAGO:</h3>
-            <ul>
-                <li><h4>tarjeta de credito.</h4></li>
-                <li><h4>tarjeta de debito.</h4></li>
-                <li><h4>transferencia bancaria</h4></li>
-            </ul>
+      <footer>
+
+        <div id="foterconteiner">
+
+            <div>
+                <h3>MEDIOS DE PAGO</h3>
+                <ul>
+                    <li  class="foterlogo">
+                        <h4>tarjeta de credito.</h4>
+                        <img src="../img/logo.tarjeta.credi.png" alt="logo de tarjeta de credito">
+                    </li>
+                    <li  class="foterlogo">
+                        <h4>tarjeta de debito.</h4>
+                        <img src="../img/logo.tarjeta.debit.png" alt="logo de tarjeta de debito">
+                    </li>
+                    <li class="foterlogo">
+                        <h4>transferencia bancaria.</h4>
+                        <img src="../img/logo.transferencia.png" alt="logo de transferencia">
+                    </li>
+                </ul>
+            </div>
+
+            <div id="redes">
+                <h3>SIGUENOS</h3>
+                <ul>
+                    <li class="foterredes">
+                          
+                         
+                       <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank"> 
+                            <i class="fa-brands fa-instagram"  alt="logo de instagram"></i></i></a>
+                       
+                    </li>
+                    <li class="foterredes">
+                    
+                        <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                        <i class="fa-brands fa-youtube"alt="logo de youtube"></i>></i></a>
+                    </li>
+                    <li class="foterredes">
+                      
+                        <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                               <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i>></i></a></li>
+
+                    <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
+                            <img src="../img/logo.Awatsap.png" alt="logo de Whatsapp">
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div id="correo">
+                <h3>MODO DE ENVIOS</h3>
+                <ul>
+                    <li>
+                        <h4>Correo argentino.</h4>
+                        <img src="../img/logo.correo.arg.png" alt="logo del correo argentino">
+                    </li>
+                    <li>
+                        <h4>Correo OCA.</h4>
+                        <img src="../img/logo.png" alt="logo del correo OCA">
+                    </li>
+                     <li>
+                        <h4>Motomensajeria</h4>
+                        <img src="../img/logo.motomnjs.png" alt="logo del correo OCA">
+                    </li>
+
+                </ul>
+
+            </div>
+          
+
         </div>
-        <div>
-            <h3>NUESTRAS REDES SOCIALES:</h3>
-            <ul>
-                <li><h4>instagram: gorras.isa_10.</h4></li>
-                <li><h4>facebook: gorras_10.</h4></li>
-                <li><a class="boton2" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">canal de
-                        youtube.</a></li>
-                <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
-                        <img src="../img/logo.wapp.jpeg" alt="logo de Whatsapp">
-                    </a>
-                </li>
-            </ul>
-    
-        </div>
-    
-        <div class="correo">
-            <h3>MODO DE ENVIOS:</h3>
-            <ul>
-                <div>
-                    <li><h4>correo argentino.</h4></li>
-                    <img  src="../img/Logo_Correo_Argentino.svg.png" alt="logo del correo argentino">
-                </div>
-                <div>
-                    <li><h4>correo OCA.</h4></li>
-                    <img  src="../img/Logooca.png" alt="logo del correo OCA">
-                </div>
-    
-            </ul>
-        </div>
-    
-        <div>
-            <li><a class="boton" href="../index.html">volver al INICIO</a></li>
-        </div>
-    </div>
     </footer>
 </body>
 </html>

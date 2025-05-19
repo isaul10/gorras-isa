@@ -1,0 +1,28 @@
+
+ 
+      //BASE
+@use"./base/reset";
+@use"./base/typography";
+@use"./base/VARS";
+  
+        //LAYOUT
+
+@use"./Layout/header";
+@use"./Layout/menu";
+@use"./Layout/footer";
+@use"./Layout/nav";
+
+
+        //componentes
+@use"./componentes/boton";
+
+        //PAGES
+@use"./pages/home";
+@use"./pages/contacto";
+@use"./pages/cuenta";
+@use"./pages/productos";
+@use"./pages/outlet";
+
+
+        /**grid*/
+@use"./Layout/grid";

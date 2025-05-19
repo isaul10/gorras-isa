@@ -1,0 +1,33 @@
+
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    margin-top: 110px;    
+    justify-content:center;
+    flex-wrap: wrap;   
+    padding: 20px;
+   
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;  
+        margin-top: 7px;
+    } 
+    div{
+          .usuario{
+            img{
+                width: 40px;
+                margin-right: 10px;
+            }
+        }
+           .carrito{
+            img{
+                width: 40px;
+                margin-left: 10px;
+            }
+        }
+    }           
+}

@@ -1,0 +1,83 @@
+@import"../base/VARS";
+footer {
+    grid-area: footer;
+    background-color:$NAVcolor;
+    color: white;
+    height: 200px; 
+    margin-top: 40px;
+                                                      
+ #foterconteiner {
+    font-family:system-ui;   /*para selecionar el tipo de letra*/
+    display: flex;  /*para aplicar box*/
+    justify-content:space-around;
+    align-content:center;
+    flex-direction:row;
+   
+    flex-wrap: wrap;  
+    
+    padding: 10px ;
+    h3{
+        font-family:monospace;
+        font-size: large;
+   }
+   h4{
+    font-size:15px ; 
+    font-weight:400; 
+    
+    }
+    .wapp img {
+        width: 60px;       
+        position: fixed;   
+        bottom: 20px;   
+        right: 20px;  
+    }
+    #correo{
+        ul{
+            padding: 5px;
+            li{
+                padding:5px;
+            }
+        }
+         img {
+        width: 50px;
+    }
+    }
+    .foterlogo{
+        img{
+        width: 50px;
+        }
+    }
+    #redes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+         ul{
+            padding-top: 5px;
+            .foterredes{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                   
+        .fa-brands{
+        background: transparent;
+        font-size: 30px;
+        color: white;
+    }
+            }
+        }
+
+       
+    
+    }
+  
+    .fa-solid{
+         font-size: 30px;
+        color: white;
+        padding-left: 15px;
+    }
+
+}
+}
