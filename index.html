@@ -10,24 +10,31 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       
+        <!--link boostrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
    <!--link de CSS-->
-   <link rel="stylesheet" href="./style/css/style.css">
+ <link rel="stylesheet" href="./style/css/style.css">
     <title>Document</title>
      <!--link de iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--link de animations-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!--link de animations scrooll-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
     
-
 <body>
 
-
-    <!--Header(encavezado,logo)-->
     <header id="encabeza">
         <a href="#">
             <img src="./img/logo.ISA.png" alt="logo de gorra">
@@ -35,38 +42,65 @@
 
     </header>
 
-    <!--Nav(barra de navegacion)-->
-    
+
+
     <nav class="nav">
         <div>
             <li>
                 <a class="usuario" href="./paguinas/micuenta.html">
-                 <img src="./img/logo.usuarioA.png" alt="logo de usuario"></a>
+                    <img src="./img/logo.usuarioA.png" alt="logo de usuario"></a>
             </li>
         </div>
+        <div id="nav_bost">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
 
-        <ul>
-            
-            <li><a class="boton4" href="#">Inicio</a></li>
-          
-            <li>
-                <a class="boton4" href="./paguinas/contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a class="boton4" href="./paguinas/productos.html">Productos</a>
-            </li>
-            <li>
-                <a class="boton4" href="./paguinas/outlet.html">Outlet</a>
-            </li>
-        </ul>
-         <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paguinas/contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paguinas/productos.html">PRODUCTOS</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paguinas/Ayuda.html">AYUDA</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+        </div>
+     
+
+
+        <div>
             <li>
                 <a class="carrito" href="#">
-                 <img src="./img/logo.carrito.png" alt="logo de carrito"></a>
+                    <img src="./img/logo.carrito.png" alt="logo de carrito"></a>
             </li>
         </div>
     </nav>
-    <main>   <!--main: contenido principal-->
+    <main>
         <section id="baner">
             <div id="banerParraf">
 
@@ -83,12 +117,12 @@
                     correo OCA. Podes encontrar nuestra sucursal en Avenida Bolivia 5051, A4400 salta.
                 </p>
                 <div class="boton">
-                    <a  href="./index.html">ver mas</a>
+                    <a href="./index.html">ver mas</a>
                 </div>
-                
+
             </div>
 
-            <div id="logoini">
+            <div id="logoini" class="animate__animated animate__bounceInRight">
                 <img src="./img/logo.ISA.png" alt="logo de gorra">
             </div>
 
@@ -99,30 +133,12 @@
     <section id="modelos">
         <h2>NUESTROS MODELOS:</h2>
         <div id="modelconteiner">
-            <div class="etiqueta">
-            <div class="model">
-                <h3>Gorra plana</h3>
-                <img src="./img/gorra.model3.png" alt="modelo de una gorra plana">
-            </div>
-            
-            <div class="descrip">
-                <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
-                     con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte 
-                     trasera abierta incorpora un 
-                    cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
-                </p>
-            </div>
-            
-            <div class="boton">
-                <a class="enlase" href="#">ver mas</a>
-            </div>
-            </div>
-            <div class="etiqueta">
+            <div data-aos="zoom-in-up" class="etiqueta">
                 <div class="model">
-                    <h3>Gorra curva</h3>
-                    <img src="./img/gorra.model4.png" alt="modelo de una gorra curva">
+                    <h3>Gorra plana</h3>
+                    <img src="./img/gorra.model3.png" alt="modelo de una gorra plana">
                 </div>
-                
+
                 <div class="descrip">
                     <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
                         con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte
@@ -130,88 +146,106 @@
                         cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
                     </p>
                 </div>
-                
+
                 <div class="boton">
                     <a class="enlase" href="#">ver mas</a>
                 </div>
             </div>
-               <div class="etiqueta">
-            <div class="model">
-                <h3>Gorra cerrada</h3>
-                <img src="./img/gorra.model1.png" alt="modelo de una gorra plana cerrada">
+            <div data-aos="zoom-in-up" class="etiqueta">
+                <div class="model">
+                    <h3>Gorra curva</h3>
+                    <img src="./img/gorra.model4.png" alt="modelo de una gorra curva">
+                </div>
+
+                <div class="descrip">
+                    <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
+                        con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte
+                        trasera abierta incorpora un
+                        cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
+                    </p>
+                </div>
+
+                <div class="boton">
+                    <a class="enlase" href="#">ver mas</a>
+                </div>
             </div>
-            
-            <div class="descrip">
-                <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
-                     con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte 
-                     trasera abierta incorpora un 
-                    cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
-                </p>
+            <div data-aos="zoom-in-up" class="etiqueta">
+                <div class="model">
+                    <h3>Gorra cerrada</h3>
+                    <img src="./img/gorra.model1.png" alt="modelo de una gorra plana cerrada">
+                </div>
+
+                <div class="descrip">
+                    <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
+                        con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte
+                        trasera abierta incorpora un
+                        cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
+                    </p>
+                </div>
+
+                <div class="boton">
+                    <a class="enlase" href="#">ver mas</a>
+                </div>
             </div>
-            
-            <div class="boton">
-                <a class="enlase" href="#">ver mas</a>
+            <div data-aos="zoom-in-up" class="etiqueta">
+                <div class="model">
+                    <h3>Gorra cerrada</h3>
+                    <img src="./img/gorra.model2.png" alt="modelo de una gorra curva cerrada">
+                </div>
+
+                <div class="descrip">
+                    <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
+                        con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte
+                        trasera abierta incorpora un
+                        cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
+                    </p>
+                </div>
+
+                <div class="boton">
+                    <a class="enlase" href="#">ver mas</a>
+                </div>
             </div>
+            <div data-aos="zoom-in-up" class="etiqueta">
+                <div class="model">
+                    <h3>Gorra cerrada</h3>
+                    <img src="./img/gorra.model2.png" alt="modelo de una gorra curva cerrada">
+                </div>
+
+                <div class="descrip">
+                    <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
+                        con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte
+                        trasera abierta incorpora un
+                        cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
+                    </p>
+                </div>
+
+                <div class="boton">
+                    <a class="enlase" href="#">ver mas</a>
+                </div>
             </div>
-                <div class="etiqueta">
-            <div class="model">
-                <h3>Gorra cerrada</h3>
-                <img src="./img/gorra.model2.png" alt="modelo de una gorra curva cerrada">
+            <div data-aos="zoom-in-up" class="etiqueta">
+                <div class="model">
+                    <h3>Gorra cerrada</h3>
+                    <img src="./img/gorra.model2.png" alt="modelo de una gorra curva cerrada">
+                </div>
+
+                <div class="descrip">
+                    <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
+                        con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte
+                        trasera abierta incorpora un
+                        cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
+                    </p>
+                </div>
+
+                <div class="boton">
+                    <a class="enlase" href="#">ver mas</a>
+                </div>
             </div>
-            
-            <div class="descrip">
-                <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
-                     con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte 
-                     trasera abierta incorpora un 
-                    cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
-                </p>
-            </div>
-            
-            <div class="boton">
-                <a class="enlase" href="#">ver mas</a>
-            </div>
-            </div>
-                    <div class="etiqueta">
-            <div class="model">
-                <h3>Gorra cerrada</h3>
-                <img src="./img/gorra.model2.png" alt="modelo de una gorra curva cerrada">
-            </div>
-            
-            <div class="descrip">
-                <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
-                     con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte 
-                     trasera abierta incorpora un 
-                    cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
-                </p>
-            </div>
-            
-            <div class="boton">
-                <a class="enlase" href="#">ver mas</a>
-            </div>
-            </div>
-                    <div class="etiqueta">
-            <div class="model">
-                <h3>Gorra cerrada</h3>
-                <img src="./img/gorra.model2.png" alt="modelo de una gorra curva cerrada">
-            </div>
-            
-            <div class="descrip">
-                <p>Diseñada con una visera curva que ofrece un look atemporal y moderno, esta gorra cuenta
-                     con una construcción de seis paneles y costuras reforzadas para mayor durabilidad. Su parte 
-                     trasera abierta incorpora un 
-                    cierre ajustable tipo snapback, lo que garantiza un ajuste cómodo para la mayoría de tallas.
-                </p>
-            </div>
-            
-            <div class="boton">
-                <a class="enlase" href="#">ver mas</a>
-            </div>
-            </div>
-           
-           
+
+
         </div>
         <div id="botmodel" class="boton">
-                <a  href="#baner">volver arriba</a>
+            <a href="#baner">volver arriba</a>
 
         </div>
     </section>
@@ -220,16 +254,16 @@
 
         <div id="foterconteiner">
 
-            <div>
+            <div data-aos="fade-up">
                 <h3>MEDIOS DE PAGO</h3>
                 <ul>
-                    <li  class="foterlogo">
+                    <li class="foterlogo">
                         <h4>tarjeta de credito.</h4>
                         <img src="./img/logo.tarjeta.credi.png" alt="logo de tarjeta de credito">
                     </li>
-                    <li  class="foterlogo">
+                    <li class="foterlogo">
                         <h4>tarjeta de debito.</h4>
-                         <img src="./img/logo.tarjeta.debit.png" alt="logo de tarjeta de debito">
+                        <img src="./img/logo.tarjeta.debit.png" alt="logo de tarjeta de debito">
                     </li>
                     <li class="foterlogo">
                         <h4>transferencia bancaria.</h4>
@@ -242,31 +276,34 @@
                 <h3>SIGUENOS</h3>
                 <ul>
                     <li class="foterredes">
-                          
-                         
-                       <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank"> 
-                            <i class="fa-brands fa-instagram"  alt="logo de instagram"></i></i></a>
-                       
-                    </li>
-                    <li class="foterredes">
-                    
-                        <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
-                        <i class="fa-brands fa-youtube"alt="logo de youtube"></i></i></a>
-                    </li>
-                    <li class="foterredes">
-                      
-                        <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
-                               <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i></i></a></li>
 
-                    <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
+
+                        <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                            <i class="fa-brands fa-instagram" alt="logo de instagram"></i></a>
+
+                    </li>
+                    <li class="foterredes">
+
+                        <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                            <i class="fa-brands fa-youtube" alt="logo de youtube"></i></a>
+                    </li>
+                    <li class="foterredes">
+
+                        <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                            <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
                             <img src="./img/logo.Awatsap.png" alt="logo de Whatsapp">
                         </a>
                     </li>
-                   
+
+
                 </ul>
             </div>
 
-            <div id="correo">
+
+            <div data-aos="fade-up" id="correo">
                 <h3>MODO DE ENVIOS</h3>
                 <ul>
                     <li>
@@ -277,7 +314,7 @@
                         <h4>Correo OCA.</h4>
                         <img src="./img/logo.png" alt="logo del correo OCA">
                     </li>
-                     <li>
+                    <li>
                         <h4>Motomensajeria</h4>
                         <img src="./img/logo.motomnjs.png" alt="logo del correo OCA">
                     </li>
@@ -285,12 +322,20 @@
                 </ul>
 
             </div>
-          
+
 
         </div>
     </footer>
+    <!--link de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
-
+    <!--link de scrroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
  

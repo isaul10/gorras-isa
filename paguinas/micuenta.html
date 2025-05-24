@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="../style/css/style.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--link de animations-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+   <!--link de animations scrooll-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
+
     <header id="encabe2">
         <div>
-                <a class="inicio" href="../index.html">
-            <img src="../img/log.Aisa.png" alt="logo de usuario"></a>
+            <a class="inicio" href="../index.html">
+                <img src="../img/logo.ISA.png" alt="logo de gorra">
         </div>
-    
-    
+
+
     </header>
-    
-    
-    <nav class="nav">
+
+
+    <nav class="nav" id="idarriba">
         <ul>
-            <li> <a class="boton4" href="../index.html">Inicio</a></li>
-            
+
+
             <li> <a class="boton4" href="#iniciar_cesion">Iniciar cesion</a></li>
-            
+
             <li><a class="boton4" href="#crear_cuenta">Crear cuenta</a></li>
 
         </ul>
@@ -33,152 +40,160 @@
 
 
     <main class="maincuenta">
-        
-       
-              <h1>SUMATE A LA COMUNIDAD</h1>
+
+        <div id="logo-pag-cuenta" class="animate__animated animate__bounceInLeft">
+            <h1>SUMATE A LA COMUNIDAD</h1>
             <h1>TUS BENEFICIOS DE ADICLUB TE ESPERAN</h1>
             <img src="../img/logo.ISA.png" alt="logo de gorras isa">
-          
+
             <p>Obtené un descuento especial por tiempo limitado
-Registrate para recibir las últimas novedades de Nike. Sé el primero en conocer los últimos lanzamientos y ofertas exclusivas.</p>
-          <section id="iniciar_cesion"></section>
-           
-          <form action="">
+                Registrate para recibir las últimas novedades de Nike. Sé el primero en conocer los últimos lanzamientos
+                y ofertas exclusivas.</p>
+        </div>
+        <section id="iniciar_cesion" data-aos="zoom-in-up">
+            <h1>INICIAR CESION</h1>
+            <form action="">
+
                 <div>
-                       <h2>Iniciar cesion</h2>
-                    
-                 
+
+
+
                     <input class="sinborde1" id="NOMBRE" type="text" required placeholder="Ingrese su nombre">
                 </div>
-              
+
                 <div>
-                    <input class="sinborde1" id="DNI" type="number" required placeholder="Ingrese su DNI"  >
+                    <input class="sinborde1" id="DNI" type="number" required placeholder="Ingrese su DNI">
                 </div>
-    
+
                 <div>
-                   
-                    <input  class="sinborde1"  id="CLAVE" type="text" required placeholder="Ingrese su clave" >
+
+                    <input class="sinborde1" id="CLAVE" type="text" required placeholder="Ingrese su clave">
                 </div>
-           
 
                 <div id="bot">
-                <input class="boton" type="submit" value="INGRESAR">
-                <input class="boton" type="reset" value="LIMPIAR">
+
+                    <a class="boton1" href="#">enviar</a>
+
+                    <a class="boton1" href="#">limpiar</a>
                 </div>
-                <div> 
-                    <a href="#">Olvidaste tu contrasenia?</a>
-                 </div>
+                <div>
+                    <a href="#" class="enlase-sec">Olvidaste tu contrasenia?</a>
+                </div>
             </form>
-            
+
         </section>
         <div>
-        <p>Si no tenes una cuenta te dejamos el siguiente formulario para que puedas crear una cuenta, y asi
-            poder comprar nuestros productos.
-            por cualquier consulta podes escribirnos, te dejamos nuestro contacto al final de la paguina.
-         </p>
+            <p>Si no tenes una cuenta te dejamos el siguiente formulario para que puedas crear una cuenta, y asi
+                poder comprar nuestros productos.
+                por cualquier consulta podes escribirnos, te dejamos nuestro contacto al final de la paguina.
+            </p>
         </div>
-        <section id="crear_cuenta">
-           
-          
+        <section id="crear_cuenta" data-aos="zoom-in-up">
+
+            <h1>CREAR CUENTA</h1>
             <form action="">
                 <div>
-                      <h2>Crear cuenta</h2>
-                    <h3>Ingrese sus datos:</h3>
+
+
                     <label for="NOMBRE">Nombre:</label>
-                    <input id="NOMBRE" type="text" required  class="sinborde2">
-    
+                    <input id="NOMBRE" type="text" required class="sinborde2">
+
                     <label for="APELLIDO"> Apellido:</label>
-                    <input id="APELLIDO" type="text" required  class="sinborde2">
+                    <input id="APELLIDO" type="text" required class="sinborde2">
                 </div>
-    
-                <div>
-                    <label for="DNI">DNI</label>
-                    <input id="DNI" type="number" placeholder="43554132" required   class="sinborde2">
-                </div>
-    
 
                 <div>
-    
-                    <label for="EMAIL">Email</label>
-                    <input id="EMAIL" type="email" placeholder="emanuel.alan@gmail.com" required  class="sinborde2">
+                    <label for="DNI">DNI</label>
+                    <input id="DNI" type="number" placeholder="43554132" required class="sinborde2">
                 </div>
-    
+
+
+                <div>
+
+                    <label for="EMAIL">Email</label>
+                    <input id="EMAIL" type="email" placeholder="emanuel.alan@gmail.com" required class="sinborde2">
+                </div>
+
                 <div>
                     <label for="clave nueva">Ingrese una clave:</label>
-                    <input id="clave nueva" type="text" required  class="sinborde2">
+                    <input id="clave nueva" type="text" required class="sinborde2">
                 </div>
                 <div id="genero">
                     <div>
-                    <label for="hombre">hombre </label>
-                    <input type="radio" name="genero" id="hombre">
+                        <label for="hombre">hombre </label>
+                        <input type="radio" name="genero" id="hombre">
                     </div>
                     <div>
-                    <label for="mujer">mujer </label>
-                    <input type="radio" name="genero" id="mujer">
+                        <label for="mujer">mujer </label>
+                        <input type="radio" name="genero" id="mujer">
                     </div>
                 </div>
                 <div id="bot">
-                <input class="boton" type="submit" value="ENVIAR">
-                <input class="boton" type="reset" value="LIMPIAR">
-                 </div>
+                    <a class="boton1" href="#">enviar</a>
+
+                    <a class="boton1" href="#">limpiar</a>
+                </div>
             </form>
         </section>
+
         <div id="botonini">
-            <a class="boton" href="../index.html">volver al inicio</a>
-        </div> 
+            <a class="boton1" href="#idarriba">volver arriba</a>
+        </div>
     </main>
 
-      <footer>
+    <footer>
 
         <div id="foterconteiner">
 
-            <div>
+            <div data-aos="fade-up">
                 <h3>MEDIOS DE PAGO</h3>
                 <ul>
-                    <li  class="foterlogo">
+                    <li class="foterlogo">
                         <h4>tarjeta de credito.</h4>
                         <img src="../img/logo.tarjeta.credi.png" alt="logo de tarjeta de credito">
                     </li>
-                    <li  class="foterlogo">
+                    <li class="foterlogo">
                         <h4>tarjeta de debito.</h4>
-                         <img src="../img/logo.tarjeta.debit.png" alt="logo de tarjeta de debito">
+                        <img src="../img/logo.tarjeta.debit.png" alt="logo de tarjeta de debito">
                     </li>
-                    <li>
+                    <li class="foterlogo">
                         <h4>transferencia bancaria.</h4>
-                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <img src="../img/logo.transferencia.png" alt="logo de transferencia">
                     </li>
                 </ul>
             </div>
 
             <div id="redes">
                 <h3>SIGUENOS</h3>
+
                 <ul>
                     <li class="foterredes">
-                          
-                         
-                       <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank"> 
-                            <i class="fa-brands fa-instagram"  alt="logo de instagram"></i></i></a>
-                       
-                    </li>
-                    <li class="foterredes">
-                    
-                        <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
-                        <i class="fa-brands fa-youtube"alt="logo de youtube"></i></i></a>
-                    </li>
-                    <li class="foterredes">
-                      
+
+
                         <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
-                               <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i></a></li>
+                            <i class="fa-brands fa-instagram" alt="logo de instagram"></i></i></a>
+
+                    </li>
+                    <li class="foterredes">
+
+                        <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                            <i class="fa-brands fa-youtube" alt="logo de youtube"></i></i></a>
+                    </li>
+                    <li class="foterredes">
+
+                        <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
+                            <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i></a>
+                    </li>
 
                     <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
                             <img src="../img/logo.Awatsap.png" alt="logo de Whatsapp">
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
 
-            <div id="correo">
+            <div data-aos="fade-up" id="correo">
                 <h3>MODO DE ENVIOS</h3>
                 <ul>
                     <li>
@@ -189,7 +204,7 @@ Registrate para recibir las últimas novedades de Nike. Sé el primero en conoce
                         <h4>Correo OCA.</h4>
                         <img src="../img/logo.png" alt="logo del correo OCA">
                     </li>
-                     <li>
+                    <li>
                         <h4>Motomensajeria</h4>
                         <img src="../img/logo.motomnjs.png" alt="logo del correo OCA">
                     </li>
@@ -197,11 +212,16 @@ Registrate para recibir las últimas novedades de Nike. Sé el primero en conoce
                 </ul>
 
             </div>
-          
+
 
         </div>
     </footer>
 
-
+    <!--link de scrroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 </body>
 </html>

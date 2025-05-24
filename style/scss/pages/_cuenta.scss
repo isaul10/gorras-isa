@@ -1,110 +1,181 @@
 @import"../base/VARS";
-
 .maincuenta {
-    display: flex; 
+    display: flex;
     height: auto;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;    /*crea un espacio arriva del main para que no este muy junto con el header*/
+    padding-top: 30px;
     background: black;
-    
-    p{
 
-        color: white;
-        max-width: 700px;     
-        font-size: large;
-        font-weight: 500;
-        padding: 40px 0;
-    }
-     h1{
+    #logo-pag-cuenta {
+        text-align: center;
+
+        p {
+
+            color: white;
+            max-width: 700px;
+            font-size: large;
+            font-weight: 500;
+            padding: 40px 0;
+        }
+
+        h1 {
             color: #c92b2b;
         }
-        img{
+
+        img {
             width: 300px;
         }
-        a{
-            color: white;
-        }
-    #iniciar_cesion{
+    }
+
+    #iniciar_cesion {
         padding-top: 60px;
         display: flex;
         align-items: center;
         flex-direction: column;
-       
+
+        h1 {
+            margin: 20px;
+        }
+
+        .sinborde1 {
+            width: 200px;
+            
+            height: 20px;
+            
+            border: none;
+    
+
+            background-color: transparent;
+            border-bottom: 2px solid red;
+        
+            padding: 10px;
+            margin-bottom: 16px;
+            
+            color: white;
+        }
+
+        &placeholder {
+            color: #343a40;
+        }
+
+        form {
+            display: flex;
+            
+            flex-direction: column;
+            align-items: center;
+            width: 315px;
+            padding: 15px;
+            background-color: transparent;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px red;
+            border: solid rgba(34, 31, 31, 0) 2px;
+
+            &:hover {
+                border: solid red 2px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #bot {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin: 10px 0;
+                gap: 15px;
+
+            }
+        }
+
+        .enlase-sec {
+            color: red;
+            margin: 20px;
+        }
     }
-    #botonini{
+
+    p {
+        text-align: center;
+        max-width: 600px;
+        min-width: 280px;
+        padding: 30px 0px;
+    }
+
+    #crear_cuenta {
+        label {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+
+        .sinborde2 {
+            border: none;
+        
+            background-color: transparent;
+            
+            border-bottom: 2px solid rgb(231, 16, 16);
+            
+            padding: 4px;
+
+            width: 200px;
+        
+            height: 20px;
+    
+            appearance: none;
+            margin-bottom: 5px;
+        
+            color: white;
+
+        }
+
+        #genero {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding: 10px 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 315px;
+            padding: 15px;
+            background-color: transparent;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px red;
+            border: solid rgba(34, 31, 31, 0) 2px;
+
+            &:hover {
+                border: solid red 2px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #bot {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin: 10px 0;
+                gap: 15px;
+
+            }
+        }
+    }
+
+    #botonini {
         padding: 30px;
     }
-    label{
-        color:white;
-    }
-    h2{
-    
-        color: white;
-        font-weight: 500;
-    }
-    #bot{
-        gap: 15px;
-    }
-    .sinborde1{
-        width: 200px; /* Ajusta el ancho según tus necesidades */
-        height: 20px; /* Ajusta la altura según tus necesidades */
-        border: none; /* Elimina los bordes predeterminados */
-        
-        background-color:transparent;
-        border-bottom: 2px solid rgb(221, 214, 214); /* Agrega un borde inferior */
-        padding: 10px;
-        margin-bottom: 16px; /*para que los cuadritos no esten tan juntos*/
-        color: white;
-    }
-    &placeholder{
-        color:#343a40;
-    }
-    .sinborde2{
-        border: none; /* Elimina los bordes predeterminados */
-        background-color: transparent; /* Hace el fondo transparente */
-        border-bottom: 2px solid rgb(219, 213, 213); /* Agrega un borde inferior */
-        padding: 4px ; /* Espacio interno en el input */
-        width: 200px; /* Ajusta el ancho según tus necesidades */
-        height: 20px; /* Ajusta la altura según tus necesidades */
-        appearance: none;
-        margin-bottom: 5px; /*para que los cuadritos no esten tan juntos*/
-       color: white;
-        
-    }
-    #genero{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;    /* crea un espacio entre los div*/
-        padding: 10px 20px;
-    }
 
-    form{
-        display: flex;                   /*para poder aplicar flex sobre el header*/
-        flex-direction: column;
-        align-items: center;
-        width: 315px;
-        padding: 15px ;
-        background-color: $NAVcolor;
-        border-radius: 10px;
-        box-shadow: 2px 2px 15px rgb(182, 175, 175);
-         border: solid rgba(34, 31, 31, 0) 2px;
-        &:hover{
-             border: solid rgb(223, 215, 215) 2px;
-        }
-        div {
-            display: flex;  
-            align-items:center ;
-            flex-direction: column;
-        }
-        #bot {
-            display: flex;  
-            align-items:center ;
-            flex-direction:row;
-            margin: 10px 0;
-        
-        }
-    }
-    
 }
-

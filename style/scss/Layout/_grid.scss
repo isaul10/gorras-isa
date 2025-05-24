@@ -25,11 +25,11 @@ body{
 #baner img{
   padding: 20px;
   }
-.foterconteiner{
+#foterconteiner{
   flex-direction: column;
   padding-left: 180px;
 }
-.foterconteiner div{
+#foterconteiner div{
   padding: 10px;
   }
 
@@ -56,8 +56,10 @@ body{
   width: 100%;
   padding: 10px 5px;
 }
-.foterconteiner{
+#foterconteiner{
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .model img{
   width: 100%;
@@ -74,5 +76,3 @@ body{
 }
                  
 }
-                
-                

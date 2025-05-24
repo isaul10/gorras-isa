@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="../style/css/style.css">
     <title>Document</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+       <!--link de animations-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+   <!--link de animations scrooll-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
 <body>
     <header id="encabezado">
         <div>
@@ -15,7 +23,7 @@
             <img src="../img/logo.ISA.png" alt="logo de usuario"></a>
         </div>
     </header>
-    <nav class="nav">
+    <nav class="nav"  ">
         <ul>
 
             <li> <a class="boton4" href="#ubi">Ubicacion</a></li>
@@ -30,8 +38,8 @@
     <main id="maincontacto">
 
 
-           <section id="red">
-          <div class="box-redes">
+    <section id="red" class="animate__animated animate__zoomIn" >
+          <div class="box-redes" >
                 <h1>CONTACTATE CON NOSOTROS</h1>
                 <div class="data">
                     <p> <i class="fa-solid fa-phone"></i>+143 434356</p>
@@ -78,36 +86,46 @@
         </section>
 
         
-        <section id="ubi">
+        <section id="ubi"  data-aos="zoom-in-up">
             <div id="direccion">
-            <h2>Nuestra Ubicacion:</h2>
+                <h1>NOS ENCONTRAMOS EN:</h1>
+            
                 <p>actualmente contamos con una sucursales en el interior del pais, en salta para ser mas espesifico</p>
-           
-          
-           <h3>direccion: Avenida Bolivia 5051</h3>
-            <h3>codigo postal: A4400</h3>
-            <h3>Salta Argentina</h3>
-               
+                <h3>direccion: Avenida Bolivia 5051</h3>
+                <h3>codigo postal: A4400</h3>
+                <h3>Salta Argentina</h3>
+            
+            
+            
             </div>
+
             <div id="maps">
-              <h3>Te dejamos tambien nuestra Ubicacion en google maps:</h3>
-                <iframe
+              
+              <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57969.77134859355!2d-65.47434820648954!3d-24.7573930225929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc113ff725893%3A0x2981a8b51a8d1fbd!2sUniversidad%20Nacional%20de%20Salta!5e0!3m2!1ses-419!2sar!4v1742414391443!5m2!1ses-419!2sar"
-                     height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                     style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+                
             </div>
-        </section>
 
-        <section id="loc">
-            <h2>Nuestro local fisico:</h2>
-            <div>
-                <ul>
-                    <li><img  src="../img/local.jpg" alt="local vista de afuera"></li>
-                    <li><img  src="../img/imagen.ultim.1.jpg" alt="imagen del interior del local"></li>
-                    <li><img  src="../img/imagen.local3.jpg" alt="imagen del interior del local"></li>
-                    <li><img  src="../img/imagen.local4.jpg" alt="imagen del interior del local"></li>
-                </ul>
+        </section>
+   
+        <section id="loc"  data-aos="zoom-in-up">
+            <div id="titulo_local" >
+                    <h1>NUESTRO LOCAL </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea accusamus perspiciatis, assumenda nihil cumque id dolorum expedita quos! Quibusdam laudantium ipsa eius illo architecto similique veniam aliquid repellendus enim dignissimos!</p>
+            </div>
+         
+            <div id="box-local">
+                
+                    <div class="img-local"><img  src="../img/local.jpg" alt="local vista de afuera"></div>
+                    <div class="img-local"><img  src="../img/imagen.ultim.1.jpg" alt="imagen del interior del local"></div>
+                    <div class="img-local"><img  src="../img/imagen.local3.jpg" alt="imagen del interior del local"></div>
+                    <div class="img-local"><img  src="../img/imagen.local4.jpg" alt="imagen del interior del local"></div>
+                    <div class="img-local"><img  src="../img/tienda.de.gorra.png" alt="imagen del interior del local"></div>
+                    <div class="img-local"><img  src="../img/tienda.de.gorras2.png" alt="imagen del interior del local"></div>
+                    <div class="img-local"><img  src="../img/imagen.local4.jpg" alt="imagen del interior del local"></div>
             </div>
         </section>
 
@@ -119,7 +137,7 @@
 
         <div id="foterconteiner">
 
-            <div>
+            <div  data-aos="zoom-in-up">
                 <h3>MEDIOS DE PAGO</h3>
                 <ul>
                     <li  class="foterlogo">
@@ -150,12 +168,12 @@
                     <li class="foterredes">
                     
                         <a class="foterlogo" href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
-                        <i class="fa-brands fa-youtube"alt="logo de youtube"></i>></i></a>
+                        <i class="fa-brands fa-youtube"alt="logo de youtube"></i></i></a>
                     </li>
                     <li class="foterredes">
                       
                         <a href="https://www.youtube.com/watch?v=4aIqRzHEFQw" target="_blank">
-                               <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i>></i></a></li>
+                               <i class="fa-brands fa-facebook-f" alt="logo de facebook"></i></i></a></li>
 
                     <li> <a class="wapp" href="https://wa.me/+5493885195868 " target="_blank">
                             <img src="../img/logo.Awatsap.png" alt="logo de Whatsapp">
@@ -165,7 +183,7 @@
                 </ul>
             </div>
 
-            <div id="correo">
+            <div id="correo"  data-aos="zoom-in-up">
                 <h3>MODO DE ENVIOS</h3>
                 <ul>
                     <li>
@@ -188,5 +206,10 @@
 
         </div>
     </footer>
+     <!--link de scrroll-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
