@@ -69,12 +69,14 @@
             padding-top: 10px;
             flex-wrap: wrap;
             flex-direction: row;
+            justify-content: space-evenly;
 
             .preguntas {
                 text-align: center;
                 box-shadow: 2px 2px 15px rgb(243, 7, 7);
                 border-radius: 10px;
                 border: solid rgba(34, 31, 31, 0) 2px;
+                width: 300px;
 
                 &:hover {
                     border: solid rgb(231, 24, 24) 2px;
@@ -95,4 +97,3 @@
     }
 
 }
-

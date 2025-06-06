@@ -101,16 +101,13 @@ footer #foterconteiner #redes {
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
-footer #foterconteiner #redes ul {
-  padding-top: 5px;
-}
-footer #foterconteiner #redes ul .foterredes {
+footer #foterconteiner #redes .foterredes {
   padding: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-footer #foterconteiner #redes ul .foterredes .fa-brands {
+footer #foterconteiner #redes .foterredes .fa-brands {
   background: transparent;
   font-size: 30px;
   color: white;
@@ -765,12 +762,14 @@ footer #foterconteiner .fa-solid {
   padding-top: 10px;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 #main-consult #conteiner-preguntas #box-pregunt .preguntas {
   text-align: center;
   box-shadow: 2px 2px 15px rgb(243, 7, 7);
   border-radius: 10px;
   border: solid rgba(34, 31, 31, 0) 2px;
+  width: 300px;
 }
 #main-consult #conteiner-preguntas #box-pregunt .preguntas:hover {
   border: solid rgb(231, 24, 24) 2px;
@@ -793,6 +792,18 @@ body {
 }
 
 /******** GRID *******/
+@media screen and (min-width: 1075px) {
+  #main-consult {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-consult .conteiner-consulta {
+    width: 70%;
+  }
+  #main-consult #conteiner-preguntas {
+    width: 30%;
+  }
+}
 @media screen and (max-width: 768px) {
   #baner {
     flex-direction: column;
@@ -842,6 +853,24 @@ body {
   }
   #mainout section {
     flex-direction: column;
+  }
+  #main-consult {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-consult .conteiner-consulta {
+    width: 100%;
+  }
+  #main-consult #conteiner-preguntas {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer #foterconteiner {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: baseline;
   }
 }
 

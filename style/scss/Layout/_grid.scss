@@ -14,9 +14,21 @@ body{
 
 
 /******** GRID *******/
+@media screen and (min-width: 1075px){
+  #main-consult{
+    display: flex;
+    flex-direction: row;
+    .conteiner-consulta{
+      width: 70%;
+    }
+    #conteiner-preguntas{
+      width: 30%;
+    }
+  }
+
+}
 @media screen and (max-width: 768px){
-#baner {
-                     
+#baner {                   
     flex-direction: column;
     flex-wrap:nowrap;
     height: auto;
@@ -74,5 +86,29 @@ body{
 #mainout section{
   flex-direction: column;
 }
-                 
+#main-consult{
+    display: flex;
+    flex-direction: column;
+    .conteiner-consulta{
+      width: 100%;
+    }
+    #conteiner-preguntas{
+      width: 100%;
+    }
+  }
+
+       
+}
+@media screen and (max-width: 320px){
+  footer{
+    #foterconteiner{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: baseline;
+  }
+
+  }
+
+            
 }
